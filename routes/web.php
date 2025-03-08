@@ -16,7 +16,7 @@ use App\Http\Controllers\TaskController;
 */
 
 Route::get('/', function () {
-    return view('tasks.index');
+    return view('auth.login');
 });
 
 Route::patch('/tasks/{task}/complete', [TaskController::class, 'markAsCompleted'])
